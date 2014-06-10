@@ -12,31 +12,31 @@
 	   sync-f="true"
            sync-j="4" />
 
-  <project path="manifest" name="FeelAndroid/manifest" remote="github" />
+  <project path="manifest" name="FeelAndroid/manifest" remote="github" revision="master" />
 
-  <project path="build" name="FeelAndroid/android_build" remote="github" groups="pdk" >
+  <project path="build" name="FeelAndroid/android_build" remote="github" groups="pdk" revision="master" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="FeelAndroid/android_art" remote="github" />
-  <project path="bionic" name="FeelAndroid/android_bionic" remote="github" />
+  <project path="art" name="FeelAndroid/android_art" remote="github" revision="master" />
+  <project path="bionic" name="FeelAndroid/android_bionic" remote="github"  revision="master" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="FeelAndroid/bootable_recovery" remote="github" />
+  <project path="bootable/recovery" name="FeelAndroid/bootable_recovery" remote="github" revision="master" />
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="FeelAndroid/android_dalvik" remote="github" />
+  <project path="dalvik" name="FeelAndroid/android_dalvik" remote="github" revision="master" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="FeelAndroid/android_development" remote="github" />
-  <project path="device/asus/deb" name="FeelAndroid/device_asus_deb" remote="github" />
-  <project path="device/asus/flo" name="FeelAndroid/device_asus_flo" remote="github" />
+  <project path="development" name="FeelAndroid/android_development" remote="github" revision="master" />
+  <project path="device/asus/deb" name="FeelAndroid/device_asus_deb" remote="github" revision="master" />
+  <project path="device/asus/flo" name="FeelAndroid/device_asus_flo" remote="github" revision="master" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
-  <project path="device/asus/grouper" name="FeelAndroid/device_asus_grouper" remote="github" />
-  <project path="device/asus/tilapia" name="FeelAndroid/device_asus_tilapia" remote="github" />
-  <project path="device/common" name="FeelAndroid/device_common" remote="github" />
+  <project path="device/asus/grouper" name="FeelAndroid/device_asus_grouper" remote="github" revision="master" />
+  <project path="device/asus/tilapia" name="FeelAndroid/device_asus_tilapia" remote="github" revision="master" />
+  <project path="device/common" name="FeelAndroid/device_common" remote="github" revision="master" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
@@ -47,12 +47,12 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="FeelAndroid/device_lge_hammerhead" remote="github" />
+  <project path="device/lge/hammerhead" name="FeelAndroid/device_lge_hammerhead" remote="github" revision="master" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="FeelAndroid/device_lge_mako" remote="github" />
+  <project path="device/lge/mako" name="FeelAndroid/device_lge_mako" remote="github" revision="master" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/manta" name="FeelAndroid/device_samsung_manta" remote="github" />
+  <project path="device/samsung/manta" name="FeelAndroid/device_samsung_manta" remote="github" revision="master" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -249,15 +249,15 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="FeelAndroid/frameworks_av" remote="github" />
-  <project path="frameworks/base" name="FeelAndroid/frameworks_base" remote="github"/>
+  <project path="frameworks/av" name="FeelAndroid/frameworks_av" remote="github" revision="master" />
+  <project path="frameworks/base" name="FeelAndroid/frameworks_base" remote="github" revision="master" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="FeelAndroid/frameworks_native" remote="github"/>
+  <project path="frameworks/native" name="FeelAndroid/frameworks_native" remote="github" revision="master" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -310,7 +310,7 @@
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
-  <project path="packages/apps/Camera2" name="FeelAndroid/packages_apps_Camera2" />
+  <project path="packages/apps/Camera2" name="FeelAndroid/packages_apps_Camera2" remote="github" revision="master" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
@@ -338,7 +338,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="FeelAndroid/packages_apps_Settings" remote="github" />
+  <project path="packages/apps/Settings" name="FeelAndroid/packages_apps_Settings" remote="github" revision="master" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -363,7 +363,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Telephony" name="FeelAndroid/packages_services_Telephony" remote="github" />
+  <project path="packages/services/Telephony" name="FeelAndroid/packages_services_Telephony" remote="github" revision="master" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
